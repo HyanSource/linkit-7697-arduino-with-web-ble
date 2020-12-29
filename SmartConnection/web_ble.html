@@ -59,7 +59,7 @@
       _update();
     })
     .catch(error => {
-      log("Error:", error); 
+      log("Error:"+ error); 
       if (bluetoothDevice && bluetoothDevice.gatt.connected) {
         bluetoothDevice.gatt.disconnect();
       }
